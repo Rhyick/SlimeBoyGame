@@ -5,11 +5,16 @@
 [ext_resource path="res://Player/Slime1.png" type="Texture" id=3]
 [ext_resource path="res://Apple Assets/Apple1.png" type="Texture" id=4]
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "AppleIdle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
@@ -20,11 +25,6 @@ animations = [ {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "AppleRun",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "AppleIdle",
 "speed": 5.0
 } ]
 
@@ -37,7 +37,7 @@ script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.5, 0.5 )
-frames = SubResource( 3 )
+frames = SubResource( 1 )
 animation = "AppleRun"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

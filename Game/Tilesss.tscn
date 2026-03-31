@@ -9,7 +9,6 @@ extents = Vector2( 11.9028, 8.92212 )
 [node name="Tilesss" type="Node"]
 
 [node name="Sprite1" type="Sprite" parent="."]
-editor/display_folded = true
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
@@ -27,7 +26,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 50, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -46,7 +44,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite3" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 100, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -65,7 +62,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 50 )
 texture = ExtResource( 1 )
 centered = false
@@ -84,7 +80,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite5" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 50, 50 )
 texture = ExtResource( 1 )
 centered = false
@@ -103,7 +98,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite6" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 100, 50 )
 texture = ExtResource( 1 )
 centered = false
@@ -122,7 +116,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite7" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, 100 )
 texture = ExtResource( 1 )
 centered = false
@@ -141,7 +134,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite8" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 50, 100 )
 texture = ExtResource( 1 )
 centered = false
@@ -160,7 +152,6 @@ scale = Vector2( 1.05017, 1.40101 )
 shape = SubResource( 1 )
 
 [node name="Sprite9" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 100, 100 )
 texture = ExtResource( 1 )
 centered = false
@@ -180,6 +171,7 @@ shape = SubResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
+format = 1
 __meta__ = {
 "_edit_lock_": true
 }

@@ -7,8 +7,8 @@ var friction
 export var maxSpeed = 200
 export var gravity = 20
 export var jumpForce = 500
-var isDefault = true
-var isApple = false
+var isDefault = Global.isDefault
+var isApple = Global.isApple
 
 
 
@@ -35,12 +35,12 @@ func _physics_process(delta):
 			if isDefault == true:
 				$Sprite.play("Idle")
 			elif isApple == true:
-				$Sprite.paly("AppleIdle")
+				$Sprite.play("AppleIdle")
 		else:
 			if isDefault == true:
 				$Sprite.play("Idle")
 			elif isApple == true:
-				$Sprite.paly("AppleIdle")
+				$Sprite.play("AppleIdle")
 		lastMoment.x = 0
 		if isDefault == true:
 			$Sprite.play("Idle")
@@ -55,7 +55,10 @@ func _physics_process(delta):
 		if friction == true:
 			lastMoment.x = lerp(lastMoment.x, 0, 0.2)
 	else:
-		$Sprite.play("Idle")
+		if isDefault == true:
+			$Sprite.play("Idle")
+		elif isApple == true:
+			$Sprite.play("AppleIdle")
 		if friction == true:
 			lastMoment.x = lerp(lastMoment.x, 0, 0.05)
 
